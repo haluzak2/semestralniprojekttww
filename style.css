@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ececec;
+}
+.inputBox {
+  width: 100%;
+}
+.mainWindow {
+   padding:20px;
+   width: 50%;
+   max-width:1000px
+}
+.tbl {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btnCell {
+  margin-right: 10px;
+}
+.distance {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
