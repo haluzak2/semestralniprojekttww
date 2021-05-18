@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Poznámky s počasím</title>
+  <link rel = "icon" href = 
+"https://store-images.s-microsoft.com/image/apps.37231.9007199267032825.d2577191-0e74-442c-86fa-6aa5f6b69c70.fe7ad9f1-4838-4cf3-baed-5ae06e90f02b?mode=scale&q=90&h=200&w=200&background=%230078D7" 
+        type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -26,8 +29,8 @@
       <input class="inputBox" id="item" type="text" placeholder="Zde napište poznámku . . ." required="">
       </form>
       <div class="distance">
-        <button class="btn btn-lg btn-success" id="submit" type="button">Odeslat</button>
-        <button class="btn btn-lg btn-success" id="clear" type="submit">Vymazat vše</button>
+        <button class="btn btn-lg btn-success" id="submit" type="button">Vytvořit poznámku</button>
+        <button class="btn btn-lg btn-danger" id="clear" type="submit">Vymazat poznámky</button>
       </div>
       <table class="tbl">
       </table>
@@ -41,7 +44,8 @@
       </span>
      
       <h2>Teplota a větrné podmínky ve Svatém Štěpáně</h2>
-      <button type="button" onclick="checkWind(),document.getElementById('datum').innerHTML = Date()" class="btn btn-lg btn-success weatherbutton">Zobrazit počasí</button>
+      <button type="button" onclick="checkWind(),document.getElementById('datum').innerHTML = Date()" class="btn btn-lg btn-success weatherbutton" checked autocomplete="off">Zobrazit počasí</button>
+      <button onClick="window.location.reload();" class="btn btn-lg btn-warning weatherbutton">Vymazat počasí</button>
       <br>
       
       <span><b>Teplota: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br />
