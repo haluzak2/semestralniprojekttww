@@ -1,6 +1,4 @@
-/*
-  Poznámky
-*/
+/*Poznámky*/
 const form = document.querySelector('form');
 const input = document.getElementById('item');
 const btn_del_submit = document.getElementById('submit');
@@ -74,9 +72,7 @@ btn_del_clear.addEventListener('click', function () {
   }
   itemsArray = [];
 });
-/*
-  Počasí
-*/
+/*Počasí*/
 function checkWind() {
   var settings = {
     "async": true,
@@ -97,3 +93,9 @@ $("#wind_degree_unit").append (" stupňů");
 $("#main_temp_unit").append (" °C");
 });
 }
+/*Tlačítko vymazání*/
+const reloadtButton = document.querySelector("#reload");
+function reload() {
+    reload = location.reload();
+}
+reloadButton.addEventListener("click", reload, false);
