@@ -3,14 +3,22 @@ body {
   height: 100%;
 }
 body {
-  display: flex;
-  -ms-flex-align: center;
+  display:-ms-flexbox;
+  -ms-flex-align: auto;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ececec;
+}
+.jumbotron{
+  background-image: url('http://images.assetsdelivery.com/compings_v2/torianime/torianime1807/torianime180700100.jpg');
+  background-size:cover;
+  background-position:bottom;
+  height: 120%;
+  color:black;
+  font-weight: bold;
 }
 .inputBox {
   width: 100%;
@@ -33,3 +41,4 @@ body {
 }
 
 #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
+
