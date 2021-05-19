@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -18,50 +16,47 @@
   </head>
 <body>
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Poznámky s aktuálním počasím</h1>
-    <p>Vaše poznámky Vám budou kdykoliv k dispozici</p> 
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <form>
-      <input class="inputBox" id="item" type="text" placeholder="Zde napište poznámku . . ." required="">
-      </form>
-      <div class="distance">
-        <button class="btn btn-lg btn-success" id="submit" type="button">Vytvořit poznámku</button>
-        <button class="btn btn-lg btn-danger" id="clear" type="submit">Vymazat poznámky</button>
-      </div>
-      <table class="tbl">
-      </table>
-      <div class="distance">
-        
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Poznámky s aktuálním počasím</h1>
+      <p>Vaše poznámky Vám budou kdykoliv k dispozici</p> 
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+        <input class="inputBox" id="item" type="text" placeholder="Zde napište poznámku . . ." required="">
+        </form>
+        <div class="distance">
+          <button class="btn btn-lg btn-success" id="submit" type="button">Vytvořit poznámku</button>
+          <button class="btn btn-lg btn-danger" id="clear" type="submit">Vymazat poznámky</button>
+        </div>
+        <table class="tbl">
+        </table>
+        <div class="distance">
           <span style="color: rgb(44, 44, 134);">
-        <i class="fa fa-cloud fa-5x"></i>
-      </span>
-        <span style="color: rgb(211, 211, 72);">
-        <i class="fa fa-sun fa-5x fa-spin fa-fw"></i>
-      </span>
-     
-      <h2>Teplota a větrné podmínky ve Svatém Štěpáně</h2>
-      <button type="button" onclick="checkWind(),document.getElementById('datum').innerHTML = Date()" class="btn btn-lg btn-success weatherbutton" checked autocomplete="off">Zobrazit počasí</button>
-      <button onClick="window.location.reload();" class="btn btn-lg btn-warning weatherbutton">Vymazat počasí</button>
-      <br>
+            <i class="fa fa-cloud fa-5x">
+            </i>
+          </span>
+          <span style="color: rgb(211, 211, 72);">
+            <i class="fa fa-sun fa-5x fa-spin fa-fw">
+            </i>
+          </span>
       
-      <span><b>Teplota: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br />
-      <span><b>Rychlost větru: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br />
-      <span><b>Směr větru: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br />
-      <span><b>Aktuální podmínky: </b></span><span id="weather_conditions"></span><br />
-      <span><b>Aktuální datum a čas: </b></span><span style="font-weight: bold;color: red;"id="datum"></span>
+          <h2>Teplota a větrné podmínky ve Svatém Štěpáně</h2>
+          <button type="button" onclick="checkWind(),document.getElementById('datum').innerHTML = Date()" class="btn btn-lg btn-success weatherbutton" checked autocomplete="off">Zobrazit počasí</button>
+          <button onClick="window.location.reload();" class="btn btn-lg btn-danger weatherbutton">Vymazat počasí</button>
+          <br>
+          <span><b>Teplota: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br />
+          <span><b>Rychlost větru: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br />
+          <span><b>Směr větru: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br />
+          <span><b>Aktuální podmínky: </b></span><span id="weather_conditions"></span><br />
+          <span><b>Aktuální datum, čas a časové pásmo: </b></span><span style="font-weight: bold;color: red;"id="datum"></span>
+        </div>
+          
+      </div>
+      <script src="script.js"></script>
     </div>
-        
   </div>
-  
-
-  <script src="script.js"></script>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
