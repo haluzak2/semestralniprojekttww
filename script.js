@@ -17,6 +17,7 @@ const entryMaker = (text) => {
   tr.appendChild(td);
   btn_del.innerHTML = "Vymazat";
   btn_update.innerHTML = "Aktualizovat";
+  
   btn_del.onclick = function(){
     for (let i = 0; i < tbl.rows.length; i++) {
       if (tbl.rows[i] === tr) {
@@ -26,6 +27,7 @@ const entryMaker = (text) => {
       }
     }
   };
+  
   btn_update.onclick = function(){
     if (input.value === "" || input.value[0] === " ") {
       input.value = "";
